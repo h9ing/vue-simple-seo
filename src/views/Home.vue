@@ -13,6 +13,17 @@ export default {
   name: 'Home',
   components: {
     HelloWorld
+  },
+  metaInfo() {
+      return { 
+          title: "vue-simple-seo首頁",
+          meta: [
+              { name: 'description', content:  '我是首頁'},
+              { property: 'og:title', content: "vue-simple-seo首頁"},
+              { property: 'og:site_name', content: 'vue-simple-seo'},
+              {property: 'og:type', content: 'website'}
+          ]
+      }
   }
 }
 </script>
